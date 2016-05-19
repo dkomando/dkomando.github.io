@@ -190,7 +190,7 @@ module.exports = function(grunt) {
 				},
 				files:{                                           // Dictionary of files
 					// 'destination': 'source'
-					'css/bootstrap.min.css': 'node_modules/bootstrap/scss/bootstrap.scss' // All project files are imported through materialize.scss
+					'css/bootstrap.min.css': 'node_modules/bootstrap/scss/bootstrap-flex.scss' // All project files are imported through materialize.scss
 				}
 			},
 			font_awesome: {

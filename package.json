@@ -24,9 +24,11 @@
     "angular-mocks": "^1.5.5",
     "angular-route": "^1.5.5",
     "angular-sanitize": "^1.5.5",
+    "bootstrap": "^4.0.0-alpha.2",
     "font-awesome": "^4.6.1",
     "material-design-icons": "^2.2.3",
-    "bootstrap": "^4.0.0-alpha.2"
+    "open-sans-fontface": "git+https://github.com/FontFaceKit/open-sans.git#1.4.2",
+    "roboto": "git+https://github.com/FontFaceKit/roboto.git#v1.1.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",

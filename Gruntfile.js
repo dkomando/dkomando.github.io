@@ -81,6 +81,7 @@ module.exports = function(grunt) {
 
 
 		// Copy File: For removing comments - comments plugin has no destination file option.
+		// https://github.com/gruntjs/grunt-contrib-copy
 		copy: {
 			dkomando: {
 				src: 'js/app.concat.js',
@@ -105,6 +106,22 @@ module.exports = function(grunt) {
 				cwd: 'node_modules/ng-infinite-scroll/build/',
 				src: ['ng-infinite-scroll.min.js'],
 				dest: 'js/',
+				filter: 'isFile'
+			},
+			opensans_fonts: {
+				expand: true,
+				flatten: true,
+				//cwd: 'node_modules/open-sans-fontface/fonts/*/',
+				src: 'node_modules/open-sans-fontface/fonts/*/*',
+				dest: 'css/fonts/',
+				filter: 'isFile'
+			},
+			roboto_fonts: {
+				expand: true,
+				flatten: true,
+				//cwd: 'node_modules/roboto/fonts/*/',
+				src: ['node_modules/roboto/fonts/*/*'],
+				dest: 'css/fonts/',
 				filter: 'isFile'
 			}
 		},
@@ -260,7 +277,8 @@ module.exports = function(grunt) {
 	grunt.registerTask('addlibs', [
 		'copy:font_awesome','sass:font_awesome','replace:fa_path','clean:font_awesome',
 		'copy:material_icons','clean:material_icons',
-		'sass:bootstrap'
+		'sass:bootstrap',
+		'copy:opensans_fonts','copy:roboto_fonts'
 	]);
 	// Run removal of Mac .DS_Store files!
 	grunt.registerTask('rm_ds_store', ['clean:ds_store']);

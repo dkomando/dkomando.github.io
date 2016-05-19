@@ -1,0 +1,47 @@
+{
+  "name": "dkomando.github.io",
+  "version": "0.0.1",
+  "description": "website test for BS4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkomando/dkomando.github.io.git"
+  },
+  "author": "David Komando",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkomando/dkomando.github.io/issues"
+  },
+  "homepage": "https://github.com/dkomando/dkomando.github.io#readme",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-animate": "^1.5.5",
+    "angular-aria": "^1.5.5",
+    "angular-messages": "^1.5.5",
+    "angular-mocks": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "angular-sanitize": "^1.5.5",
+    "font-awesome": "^4.6.1",
+    "material-design-icons": "^2.2.3",
+    "bootstrap": "^4.0.0-alpha.2"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^0.11.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.1.0",
+    "grunt-stripcomments": "^0.4.0",
+    "grunt-text-replace": "^0.4.0",
+    "matchdep": "^1.0.1",
+    "node-bourbon": "^4.2.8",
+    "node-sass": "^3.6.0"
+  }
+}
